@@ -1,0 +1,5 @@
+Перевод в байты cp866u можно (нужно) реализовать так
+
+    def utf_to_866bytes(self, txt):
+        return txt.replace('і','i').replace('І','I').encode('cp866')
+
